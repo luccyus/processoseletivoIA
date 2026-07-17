@@ -94,7 +94,9 @@ A estratégia de validação utilizou um validation_split de 10% sobre o conjunt
 
 ### 2️⃣ Bibliotecas Utilizadas
 
-TensorFlow / Keras, NumPy e OS
+TensorFlow / Keras: Versão >= 2.12
+NumPy: Instalado via resolução de dependências do ambiente
+OS: Biblioteca nativa padrão do Python
 
 ### 3️⃣ Técnica de Otimização do Modelo
 
@@ -121,3 +123,5 @@ Amostra 2: predito=2 | real=2
 Amostra 3: predito=1 | real=1
 Amostra 4: predito=0 | real=0
 Amostra 5: predito=4 | real=4
+
+Como observado nas amostras acima, o modelo TFLite manteve sua integridade analítica após a quantização Int8, acertando com precisão o dígito 7 na Amostra 1 e o dígito 4 na Amostra 5, comprovando que a drástica redução de tamanho não penalizou a inferência na prática.
